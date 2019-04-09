@@ -1,0 +1,22 @@
+<template>
+  <require from="./components/user/user-list"></require>
+  <nav class="navbar navbar-light bg-light" role="navigation">
+    <a class="navbar-brand" href="#">
+      <i class="fa fa-user"></i>
+      <span>Contacts</span>
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" route-href="route:users">Users</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="jumbotron jumbotron-fluid">
+    <h1 class="text-center">MB Aurelia</h1>
+  </div>
+  <div class="container">
+    <div class="container-fluid">
+      <router-view class="col-md-8"></router-view>
+    </div>
+  </div>
+</template>
